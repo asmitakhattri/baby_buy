@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:id="@+id/sms">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are you ready to send SMS"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let us know about your interest"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/card_background"
+        android:elevation="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter Details"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/smobile"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/black"
+                android:hint="Enter Mobile Number"
+                android:textColorHint="#292929"
+                android:inputType="phone"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/stitle"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_production"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/black"
+                android:hint="Enter Product Tile"
+                android:textColorHint="#292929"
+                android:inputType="textPersonName"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sdescription"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_discription"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/black"
+                android:hint="Enter Description"
+                android:textColorHint="#292929"
+                android:inputType="textPersonName"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/squnatity"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_quantity"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/black"
+                android:hint="Enter Quantity"
+                android:textColorHint="#292929"
+                android:inputType="number"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sprice"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_price"
+                android:drawableTint="@color/black"
+                android:hint="Enter Price"
+                android:textColorHint="#292929"
+                android:inputType="number"
+                android:drawablePadding="15dp"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnsendsms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="Send SMS"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
